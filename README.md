@@ -1,5 +1,5 @@
 # This is bash test framework. Designed to test website html pages.
-# Could be used to test  both storefront and admin pages.
+##Could be used to test  both storefront and admin pages.
 
 # How To Write test for the page?
  1. Choose html tag you are expected to have on it.
