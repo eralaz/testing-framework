@@ -5,7 +5,7 @@ clear
 source config.cfg
 
 #boostrap env
-source bootstrap.sh
+source ../bootstrap.sh
 
 start_test_session
 
@@ -18,7 +18,7 @@ adminTests=$(echo $tests | grep admin | wc -w)
 
 #create admin log in session if there're admin pages tests
 if [ "$adminTests" -gt 0 ]; then
-    source auth.sh
+    source ../auth.sh
 fi
 
 for test in $tests
