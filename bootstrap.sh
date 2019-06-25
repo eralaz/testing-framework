@@ -15,8 +15,8 @@ function start_test_session()
     done
 
     #load test functions - scenarios
-    testFunctions=$(find -L "$TESTS_PATH" -name "*.sh")
-    for test in $testFunctions; do
+    tests=$(find -L "$TESTS_PATH" -name "*.sh")
+    for test in $tests; do
         source $test
     done
 }

@@ -1,2 +1,12 @@
 #!/usr/bin/env bash
-brew install mysql >> $RUNNING_LOG_FILE
+
+service="mysql"
+
+echo -e "\nInstalling $service...\n"
+
+if [ -z $(which $service) ]; then
+    brew install $service
+    echo -e "$service has been installed\n"
+else
+    echo -e "$service is already installed!\n"
+fi
